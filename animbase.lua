@@ -4,6 +4,8 @@ anim={[[3220FFFF00⠀FFFF00⠀FFFF00⠀FFFF00⠀FFFF00⠀FFFF00⠀FFFF00⠀FFFF0
 c=require("component")
 c.gpu.setResolution(50,32)
 im=require("image")
+s=require("shell")
+s.execute("rm anim")
 while true do
 	for _,i in pairs(anim) do im.draw(1,1,im.fromString(i)) end
 end
